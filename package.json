@@ -1,0 +1,20 @@
+{
+  "name": "zoes-beauty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind -i source/tailwind.css -o assets/css/main.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.3",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.9"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.3"
+  }
+}
