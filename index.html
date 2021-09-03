@@ -7,9 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
 </head>
 
 <body class="font-jost">
+    <!-- Mobile Navbar -->
+    <div class="wrap fixed w-full duration-300" id="mobileNavbar">
+        <nav class="relative container grid grid-cols-12">
+            <!-- Navbar Logo -->
+            <div class="col-span-12 py-2 flex justify-center">
+                <a href="">
+                    <img class="" src="assets/images/zoes-beauty-logo-white.png" alt="navbar-logo" id="logoWhite">
+                    <img class="hidden" src="assets/images/zoes-beauty-logo-black.png" alt="navbar-logo" id="logoBlack">
+                </a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <i class="fal fa-bars text-xl text-white absolute right-5 top-5 p-1 cursor-pointer" id="mobileMenuBtn"></i>
+        </nav>
+    </div>
+
+    <!-- Section 1 (Hero) -->
+    <section class="section-one pb-12 pt-28 bg-cover bg-center"
+        style="background-image: url('assets/images/herospa.jpg');">
+        <div class="container grid grid-cols-12 place-items-center place-content-center h-full">
+            <div class="col-span-12 mb-12">
+                <h1 class="font-garamond text-white text-3xl text-center">Relax, Indulge, Enjoy and Love
+                    Yourself.</h1>
+            </div>
+            <div class="col-span-12 flex flex-col space-y-4">
+                <a href=""
+                    class="inline-block uppercase py-4 px-8 bg-blueGray-100 text-sm text-center font-medium tracking-widest border border-blueGray-100">Book
+                    Appointment</a>
+                <a href=""
+                    class="inline-block uppercase py-4 px-8 bg-transparent text-sm text-center font-medium tracking-widest text-white border hover:bg-blueGray-100 hover:text-black hover:border-blueGray-100 duration-300">View
+                    Service Menu</a>
+            </div>
+        </div>
+    </section>
+
+<!-- Section 2 -->
+    <section class="section-one py-16 bg-cover bg-center bg-blueGray-100">
+        <div class="container grid grid-cols-12 place-items-center place-content-center">
+            <div class="col-span-12 text-center space-y-10">
+                <div class="mb-6 space-y-1">
+                    <h5 class="text-sm uppercase font-semibold">Contact</h5>
+                    <p class="font-light text-lg">T: 070 9485 7568</p>
+                    <p class="font-light text-lg">info@beautysalon.com</p>
+                </div>
+                <div class="mb-6 space-y-1">
+                    <h5 class="text-sm uppercase font-semibold">Hours</h5>
+                    <p class="font-light text-lg">Mon to Fri: 9:00 am - 5:00 pm</p>
+                    <p class="font-light text-lg">Sat: 9:00 am - 1:00 pm</p>
+                    <p class="font-light text-lg">Sun: Closed</p>
+                </div>
+                <div class="mb-6 space-y-1">
+                    <h5 class="text-sm uppercase font-semibold">Location</h5>
+                    <p class="font-light text-lg">85 Royal Mini Street</p>
+                    <p class="font-light text-lg">London, E1 8LG</p>
+                    <P class="font-light text-lg">United Kingdom</P>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="assets/js/main.js"></script>
 </body>
