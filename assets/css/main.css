@@ -832,6 +832,10 @@ select{
   position: relative;
 }
 
+.right-0{
+  right: 0px;
+}
+
 .-left-3\/4{
   left: -75%;
 }
@@ -858,10 +862,6 @@ select{
 
 .top-3{
   top: 0.75rem;
-}
-
-.right-0{
-  right: 0px;
 }
 
 .z-40{
