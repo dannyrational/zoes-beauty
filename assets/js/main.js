@@ -11,12 +11,16 @@ const bodyWrap = document.querySelector("#bodyWrap");
 window.addEventListener('scroll', function () {
     if (document.body.scrollTop >= 10 || document.documentElement.scrollTop >= 10) {
         mobileNavbar.classList.add('bg-white');
+        mobileNavbar.classList.remove('absolute');
+        mobileNavbar.classList.add('fixed');
         mobileMenuBtnOpen.classList.remove('text-white');
         mobileMenuBtnClose.classList.remove('text-white');
         logoWhite.classList.add('hidden');
         logoBlack.classList.remove('hidden');
     } else {
         mobileNavbar.classList.remove('bg-white');
+        mobileNavbar.classList.remove('fixed');
+        mobileNavbar.classList.add('absolute');
         mobileMenuBtnOpen.classList.add('text-white');
         mobileMenuBtnClose.classList.add('text-white');
         logoWhite.classList.remove('hidden')
