@@ -1,19 +1,44 @@
+// ? Navbar Color Change on Scroll
 const mobileNavbar = document.querySelector("#mobileNavbar");
-const mobileMenuBtn = document.querySelector("#mobileMenuBtn");
+const mobileMenuBtnOpen = document.querySelector("#mobileMenuBtnOpen");
+const mobileMenuBtnClose = document.querySelector("#mobileMenuBtnClose");
 const logoWhite = document.querySelector("#logoWhite");
 const logoBlack = document.querySelector("#logoBlack");
 
-window.addEventListener('scroll', function() {
+const slideOutMenu = document.querySelector("#slideOutMenu");
+const bodyWrap = document.querySelector("#bodyWrap");
+
+window.addEventListener('scroll', function () {
     if (document.body.scrollTop >= 10 || document.documentElement.scrollTop >= 10) {
         mobileNavbar.classList.add('bg-white');
-        mobileMenuBtn.classList.remove('text-white');
+        mobileMenuBtnOpen.classList.remove('text-white');
+        mobileMenuBtnClose.classList.remove('text-white');
         logoWhite.classList.add('hidden');
         logoBlack.classList.remove('hidden');
     } else {
         mobileNavbar.classList.remove('bg-white');
-        mobileMenuBtn.classList.add('text-white');
+        mobileMenuBtnOpen.classList.add('text-white');
+        mobileMenuBtnClose.classList.add('text-white');
         logoWhite.classList.remove('hidden')
         logoBlack.classList.add('hidden');
     };
 });
 
+// ? Slide Out Menu
+mobileMenuBtnOpen.addEventListener("click", function () {
+    slideOutMenu.classList.remove('-right-full')
+    slideOutMenu.classList.add('right-0')
+    bodyWrap.classList.remove('left-0')
+    bodyWrap.classList.add('-left-3/4')
+    mobileMenuBtnOpen.classList.add('hidden');
+    mobileMenuBtnClose.classList.remove('hidden');
+});
+
+mobileMenuBtnClose.addEventListener("click", function () {
+    slideOutMenu.classList.remove('right-0')
+    slideOutMenu.classList.add('-right-full')
+    bodyWrap.classList.remove('-left-3/4')
+    bodyWrap.classList.add('left-0')
+    mobileMenuBtnOpen.classList.remove('hidden');
+    mobileMenuBtnClose.classList.add('hidden');
+});

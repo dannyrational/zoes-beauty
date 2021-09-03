@@ -11,64 +11,105 @@
 </head>
 
 <body class="font-jost">
-    <!-- Mobile Navbar -->
-    <div class="wrap fixed w-full duration-300" id="mobileNavbar">
-        <nav class="relative container grid grid-cols-12">
-            <!-- Navbar Logo -->
-            <div class="col-span-12 py-2 flex justify-center">
-                <a href="">
-                    <img class="" src="assets/images/zoes-beauty-logo-white.png" alt="navbar-logo" id="logoWhite">
-                    <img class="hidden" src="assets/images/zoes-beauty-logo-black.png" alt="navbar-logo" id="logoBlack">
-                </a>
+    <!-- Tailwind Classes -->
+    <div class="hidden bg-white -translate-x-3/4 -left-3/4"></div>
+
+    <!--Slide Out Menu -->
+    <div class="fixed w-3/4 h-screen duration-300 -right-full wrap bg-blueGray-100" id="slideOutMenu">
+        <nav class="container grid grid-cols-12">
+            <!-- Links -->
+            <div class="flex flex-col col-span-12 space-y-4 text-sm font-semibold tracking-wider uppercase py-14">
+                <a href="" class="py-2">Home</a>
+                <a href="" class="py-2">Service Menu</a>
+                <a href="" class="py-2">Our Story</a>
+                <a href="" class="py-2">Contact</a>
             </div>
-            <!-- Mobile Menu Button -->
-            <i class="fal fa-bars text-xl text-white absolute right-5 top-5 p-1 cursor-pointer" id="mobileMenuBtn"></i>
+            <!-- Social Media Icons -->
+            <div class="col-span-12">
+                <p class="">Follow us on Social Media</p>
+                <div class="mt-1 text-xl">
+                    <a href="" class="inline-block ">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="" class="inline-block">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
         </nav>
     </div>
 
-    <!-- Section 1 (Hero) -->
-    <section class="section-one pb-12 pt-28 bg-cover bg-center"
-        style="background-image: url('assets/images/herospa.jpg');">
-        <div class="container grid grid-cols-12 place-items-center place-content-center h-full">
-            <div class="col-span-12 mb-12">
-                <h1 class="font-garamond text-white text-3xl text-center">Relax, Indulge, Enjoy and Love
-                    Yourself.</h1>
-            </div>
-            <div class="col-span-12 flex flex-col space-y-4">
-                <a href=""
-                    class="inline-block uppercase py-4 px-8 bg-blueGray-100 text-sm text-center font-medium tracking-widest border border-blueGray-100">Book
-                    Appointment</a>
-                <a href=""
-                    class="inline-block uppercase py-4 px-8 bg-transparent text-sm text-center font-medium tracking-widest text-white border hover:bg-blueGray-100 hover:text-black hover:border-blueGray-100 duration-300">View
-                    Service Menu</a>
-            </div>
-        </div>
-    </section>
+    <!-- Body Wrap -->
+    <div class="relative left-0 duration-300" id="bodyWrap">
 
-<!-- Section 2 -->
-    <section class="section-one py-16 bg-cover bg-center bg-blueGray-100">
-        <div class="container grid grid-cols-12 place-items-center place-content-center">
-            <div class="col-span-12 text-center space-y-10">
-                <div class="mb-6 space-y-1">
-                    <h5 class="text-sm uppercase font-semibold">Contact</h5>
-                    <p class="font-light text-lg">T: 070 9485 7568</p>
-                    <p class="font-light text-lg">info@beautysalon.com</p>
+        <!-- Mobile Navbar -->
+        <div class="fixed top-0 w-full duration-300 wrap" id="mobileNavbar">
+            <nav class="container relative grid grid-cols-12">
+
+                <!-- Navbar Logo -->
+                <div class="flex justify-center col-span-12 py-2">
+                    <a href="">
+                        <img class="" src="assets/images/zoes-beauty-logo-white.png" alt="navbar-logo" id="logoWhite">
+                        <img class="hidden" src="assets/images/zoes-beauty-logo-black.png" alt="navbar-logo"
+                            id="logoBlack">
+                    </a>
                 </div>
-                <div class="mb-6 space-y-1">
-                    <h5 class="text-sm uppercase font-semibold">Hours</h5>
-                    <p class="font-light text-lg">Mon to Fri: 9:00 am - 5:00 pm</p>
-                    <p class="font-light text-lg">Sat: 9:00 am - 1:00 pm</p>
-                    <p class="font-light text-lg">Sun: Closed</p>
+
+                <!-- Mobile Menu Button -->
+                <button class="absolute p-1 text-xl text-white right-5 top-4" type="button" id="mobileMenuBtnOpen">
+                    <i class="fal fa-bars"></i>
+                </button>
+                <button class="absolute hidden p-1 text-2xl text-white right-5 top-3" type="button"
+                    id="mobileMenuBtnClose">
+                    <i class="fal fa-times"></i>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Section 1 (Hero) -->
+        <section class="pb-12 bg-center bg-cover section-one pt-28"
+            style="background-image: url('assets/images/herospa.jpg');">
+            <div class="container grid h-full grid-cols-12 place-items-center place-content-center">
+                <div class="col-span-12 mb-12">
+                    <h1 class="text-3xl text-center text-white font-garamond">Relax, Indulge, Enjoy and Love
+                        Yourself.</h1>
                 </div>
-                <div class="mb-6 space-y-1">
-                    <h5 class="text-sm uppercase font-semibold">Location</h5>
-                    <p class="font-light text-lg">85 Royal Mini Street</p>
-                    <p class="font-light text-lg">London, E1 8LG</p>
-                    <P class="font-light text-lg">United Kingdom</P>
+                <div class="flex flex-col col-span-12 space-y-4">
+                    <a href=""
+                        class="inline-block px-8 py-4 text-sm font-medium tracking-widest text-center uppercase border bg-blueGray-100 border-blueGray-100">Book
+                        Appointment</a>
+                    <a href=""
+                        class="inline-block px-8 py-4 text-sm font-medium tracking-widest text-center text-white uppercase duration-300 bg-transparent border hover:bg-blueGray-100 hover:text-black hover:border-blueGray-100">View
+                        Service Menu</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="py-16 bg-center bg-cover section-one bg-blueGray-100">
+            <div class="container grid grid-cols-12 place-items-center place-content-center">
+                <div class="col-span-12 space-y-10 text-center">
+                    <div class="mb-6 space-y-1">
+                        <h5 class="text-sm font-semibold uppercase">Contact</h5>
+                        <p class="text-lg font-light">T: 070 9485 7568</p>
+                        <p class="text-lg font-light">info@beautysalon.com</p>
+                    </div>
+                    <div class="mb-6 space-y-1">
+                        <h5 class="text-sm font-semibold uppercase">Hours</h5>
+                        <p class="text-lg font-light">Mon to Fri: 9:00 am - 5:00 pm</p>
+                        <p class="text-lg font-light">Sat: 9:00 am - 1:00 pm</p>
+                        <p class="text-lg font-light">Sun: Closed</p>
+                    </div>
+                    <div class="mb-6 space-y-1">
+                        <h5 class="text-sm font-semibold uppercase">Location</h5>
+                        <p class="text-lg font-light">85 Royal Mini Street</p>
+                        <p class="text-lg font-light">London, E1 8LG</p>
+                        <P class="text-lg font-light">United Kingdom</P>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="assets/js/main.js"></script>
 </body>
