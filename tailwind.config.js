@@ -22,6 +22,7 @@ module.exports = {
       },
       colors: {
         blueGray: colors.blueGray,
+        trueGray: colors.trueGray,
       }
     },
   },

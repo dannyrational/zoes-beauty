@@ -12,20 +12,20 @@
 
 <body class="font-jost">
     <!-- Tailwind Classes -->
-    <div class="right-0 hidden bg-white -translate-x-3/4 -left-3/4"></div>
+    <div class="right-0 hidden bg-white border-b -translate-x-3/4 -left-3/4"></div>
 
     <!--Slide Out Menu -->
-    <div class="fixed z-40 w-3/4 h-screen duration-300 -right-full wrap bg-blueGray-100" id="slideOutMenu">
-        <nav class="container grid grid-cols-12">
+    <div class="fixed z-40 w-3/4 h-screen duration-300 bg-white border-l -right-full wrap" id="slideOutMenu">
+        <nav class="container flex flex-col justify-between h-full py-12">
             <!-- Links -->
-            <div class="flex flex-col col-span-12 space-y-4 text-sm font-semibold tracking-wider uppercase py-14">
+            <div class="flex flex-col space-y-4 text-sm font-semibold tracking-wider uppercase">
                 <a href="" class="py-2">Home</a>
                 <a href="" class="py-2">Service Menu</a>
                 <a href="" class="py-2">Our Story</a>
                 <a href="" class="py-2">Contact</a>
             </div>
             <!-- Social Media Icons -->
-            <div class="col-span-12">
+            <div class="">
                 <p class="">Follow us on Social Media</p>
                 <div class="mt-1 text-xl">
                     <a href="" class="inline-block ">
@@ -43,7 +43,7 @@
     <div class="relative left-0 duration-300" id="bodyWrap">
 
         <!-- Mobile Navbar -->
-        <div class="fixed top-0 left-0 z-20 w-full duration-300 wrap" id="mobileNavbar">
+        <div class="fixed top-0 left-0 z-20 w-full transition-colors duration-300 wrap" id="mobileNavbar">
             <nav class="container relative grid grid-cols-12">
 
                 <!-- Navbar Logo -->
@@ -85,30 +85,94 @@
             </div>
         </section>
 
-        <!-- Section 2 -->
-        <section class="py-16 bg-center bg-cover section-one bg-blueGray-100">
+        <!-- Section 2 (Business Info) -->
+        <section class="py-16 section-two bg-blueGray-200">
             <div class="container grid grid-cols-12 place-items-center place-content-center">
-                <div class="col-span-12 space-y-10 text-center">
+                <div class="col-span-12 space-y-10 text-lg font-light text-center">
                     <div class="mb-6 space-y-1">
-                        <h5 class="text-sm font-semibold uppercase">Contact</h5>
-                        <p class="text-lg font-light">T: 070 9485 7568</p>
-                        <p class="text-lg font-light">info@beautysalon.com</p>
+                        <h5 class="text-sm font-medium uppercase">Contact</h5>
+                        <p class="">T: 070 9485 7568</p>
+                        <p class="">info@beautysalon.com</p>
                     </div>
                     <div class="mb-6 space-y-1">
-                        <h5 class="text-sm font-semibold uppercase">Hours</h5>
-                        <p class="text-lg font-light">Mon to Fri: 9:00 am - 5:00 pm</p>
-                        <p class="text-lg font-light">Sat: 9:00 am - 1:00 pm</p>
-                        <p class="text-lg font-light">Sun: Closed</p>
+                        <h5 class="text-sm font-medium uppercase">Hours</h5>
+                        <p class="">Mon to Fri: 9:00 am - 5:00 pm</p>
+                        <p class="">Sat: 9:00 am - 1:00 pm</p>
+                        <p class="">Sun: Closed</p>
                     </div>
                     <div class="mb-6 space-y-1">
-                        <h5 class="text-sm font-semibold uppercase">Location</h5>
-                        <p class="text-lg font-light">85 Royal Mini Street</p>
-                        <p class="text-lg font-light">London, E1 8LG</p>
-                        <P class="text-lg font-light">United Kingdom</P>
+                        <h5 class="text-sm font-medium uppercase">Location</h5>
+                        <p class="">85 Royal Mini Street</p>
+                        <p class="">London, E1 8LG</p>
+                        <P class="">United Kingdom</P>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Section 3 (Service Menu) -->
+        <section class="py-16 section-three ">
+            <div class="container grid grid-cols-12">
+                <div class="flex flex-col col-span-12">
+                    <h1 class="mb-12 text-3xl text-center font-garamond">Service Menu</h1>
+                    <div class="grid grid-cols-12 mb-12 text-xs font-medium text-center uppercase">
+                        <div class="flex flex-col items-center col-span-6 mb-6 sm:col-span-4">
+                            <img class="mb-2" src="https://via.placeholder.com/48" alt="">
+                            <p class="">Pedicures</p>
+                        </div>
+                        <div class="flex flex-col items-center col-span-6 mb-6 sm:col-span-4">
+                            <img class="mb-2" src="https://via.placeholder.com/48" alt="">
+                            <p>Waxing</p>
+                        </div>
+
+                        <div class="flex flex-col items-center col-span-6 mb-6 sm:col-span-4">
+                            <img class="mb-2" src="https://via.placeholder.com/48" alt="">
+                            <p>Manicures</p>
+                        </div>
+                        <div class="flex flex-col items-center col-span-6 mb-6 sm:col-span-4">
+                            <img class="mb-2" src="https://via.placeholder.com/48" alt="">
+                            <p>Artificial Nails & Gels</p>
+                        </div>
+
+                        <div class="flex flex-col items-center col-span-6 mb-6 sm:col-span-4">
+                            <img class="mb-2" src="https://via.placeholder.com/48" alt="">
+                            <p>Lash & Brow Treatments</p>
+                        </div>
+                        <div class="flex flex-col items-center col-span-6 mb-6 sm:col-span-4">
+                            <img class="mb-2" src="https://via.placeholder.com/48" alt="">
+                            <p>Tanning</p>
+                        </div>
+
+                        <div class="flex flex-col items-center col-span-6 mb-6 sm:col-span-4 sm:mb-0">
+                            <img class="mb-2" src="https://via.placeholder.com/48" alt="">
+                            <p>Dermalogical Facials</p>
+                        </div>
+                        <div class="flex flex-col items-center col-span-6 mb-6 sm:col-span-4 sm:mb-0">
+                            <img class="mb-2" src="https://via.placeholder.com/48" alt="">
+                            <p>Massage</p>
+                        </div>
+
+                        <div class="flex flex-col items-center col-span-6 sm:col-span-4">
+                            <img class="mb-2" src="https://via.placeholder.com/48" alt="">
+                            <p>Body Treatments</p>
+                        </div>
+                    </div>
+                    <p class="mb-12 text-lg font-light text-center">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Qui maxime
+                        modi
+                        voluptas, eligendi eius
+                        excepturi rem aut perferendis tenetur soluta vitae quas eum dicta repudiandae</p>
+                    <a href=""
+                        class="px-8 py-4 mx-auto text-sm font-medium tracking-widest text-center text-white uppercase duration-300 bg-black border border-black hover:bg-trueGray-800">View
+                        Service Menu</a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
     </div>
 
     <script src="assets/js/main.js"></script>
