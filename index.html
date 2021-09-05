@@ -43,7 +43,7 @@
     <div class="relative left-0 duration-300" id="bodyWrap">
 
         <!-- Mobile Navbar -->
-        <div class="fixed top-0 left-0 z-20 w-full transition-colors duration-300 wrap" id="mobileNavbar">
+        <div class="fixed top-0 left-0 z-20 w-full transition-all duration-300 wrap" id="mobileNavbar">
             <nav class="container relative grid grid-cols-12">
 
                 <!-- Navbar Logo -->
@@ -64,6 +64,7 @@
                     <i class="fal fa-times"></i>
                 </button>
             </nav>
+            <div class="" id="navbarBorder"></div>
         </div>
 
         <!-- Section 1 (Hero) -->
@@ -117,23 +118,23 @@
                     <h1 class="mb-12 text-3xl text-center font-garamond">Service Menu</h1>
                     <div class="grid grid-cols-12 mb-12 text-xs font-medium text-center uppercase">
                         <div class="flex flex-col items-center col-span-6 mb-6 md:col-span-3 md:mb-0">
-                            <img class="mb-2" src="assets/images/pedicures.png" alt="">
+                            <img class="mb-2 opacity-90" src="assets/images/pedicures.png" alt="">
                             <p class="">Pedicures</p>
                         </div>
 
                         <div class="flex flex-col items-center col-span-6 mb-6 md:col-span-3 md:mb-0">
-                            <img class="mb-2" src="assets/images/manicures.png" alt="">
+                            <img class="mb-2 opacity-90" src="assets/images/manicures.png" alt="">
                             <p>Manicures</p>
                         </div>
 
                         <div class="flex flex-col items-center col-span-6 md:col-span-3">
-                            <img class="mb-2" src="assets/images/nailsandgels.png" alt="">
+                            <img class="mb-2 opacity-90" src="assets/images/nailsandgels.png" alt="">
                             <p>Nails & Gels</p>
                         </div>
 
                         <div class="flex flex-col items-center col-span-6 md:col-span-3">
-                            <img class="mb-2" src="assets/images/facials.png" alt="">
-                            <p>Derma Facials</p>
+                            <img class="mb-2 opacity-90" src="assets/images/facials.png" alt="">
+                            <p>Facials</p>
                         </div>
 
                     </div>
@@ -149,20 +150,20 @@
             </div>
         </section>
 
-        <!-- Section 3 (Our Story) -->
-        <section class="py-16 section-three bg-blueGray-200">
+        <!-- Section 4 (Our Story) -->
+        <section class="pb-16 section-four bg-blueGray-200">
             <div class="container grid grid-cols-12">
-                <div class="col-span-12 mb-8">
-                    <img src="https://via.placeholder.com/768" alt="">
+                <div class="col-span-12 mb-8 -mx-4">
+                    <img src="assets/images/our-story-01.png" alt="">
                 </div>
                 <div class="flex flex-col items-center col-span-12 text-center">
                     <h1 class="mb-4 text-3xl font-garamond">Our Story</h1>
-                    <p class="mb-12 text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                        eum
-                        quos consequatur reiciendis
-                        est quasi. Iure debitis, exercitationem culpa, corporis vero deserunt voluptas quo
-                        necessitatibus minus nostrum aut unde! Modi blanditiis voluptate eum illum ipsum temporibus
-                        tempore quis quas, ab eveniet odit pariatur maxime repudiandae ut nostrum sed sapiente illo.</p>
+                    <p class="mb-12 text-lg font-light">Hello,
+                        I'm Zoe a beautician based in Walton on Thames. I have many years of experience working in the
+                        beauty industry. Some will know me from my many years at the Nail & Beauty studio at the
+                        (halfway). Since their closure I’ve been providing treatments from my home environment creating
+                        a
+                        positive, welcoming and comfortable atmosphere.</p>
                     <a href=""
                         class="px-8 py-4 text-sm font-medium tracking-widest text-center text-black uppercase duration-300 bg-transparent border border-black hover:bg-black hover:text-white">Learn
                         More</a>
@@ -170,6 +171,34 @@
             </div>
         </section>
 
+        <!-- Section 5 (Contact Form) -->
+        <div class="pb-16 section-five">
+            <div class="container grid grid-cols-12">
+                <div class="col-span-12 mb-8 -mx-4">
+                    <img src="assets/images/contact-01.png" alt="">
+                </div>
+                <div class="col-span-12 mb-12">
+                    <h1 class="mb-4 text-3xl text-center font-garamond">Drop Us a Line</h1>
+                    <p class="text-lg font-light text-center">Leave us a message and we will get back to you as soon as
+                        possible.
+                        We’d love hearing from you.
+                    </p>
+                </div>
+                <div class="col-span-12">
+                    <form action="" class="space-y-8">
+                        <input type="text" name="name" placeholder="Name *" required class="w-full text-sm">
+                        <input type="email" name="email" placeholder="Email *" required class="w-full text-sm">
+                        <input type="number" name="phone" placeholder="Phone" class="w-full text-sm">
+                        <input type="text" name="subject" placeholder="Subject" class="w-full text-sm">
+                        <textarea name="message" placeholder="Message" cols="30" rows="10"
+                            class="w-full text-sm resize-none"></textarea>
+                        <button type="submit"
+                            class="block px-8 py-4 ml-auto text-sm font-medium tracking-widest text-center text-white uppercase duration-300 bg-black border border-black hover:bg-trueGray-800">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
     </div>
 
