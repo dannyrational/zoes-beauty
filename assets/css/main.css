@@ -914,10 +914,6 @@ select{
   margin-bottom: 1rem;
 }
 
-.block{
-  display: block;
-}
-
 .inline-block{
   display: inline-block;
 }
@@ -942,12 +938,40 @@ select{
   height: 100%;
 }
 
+.h-16{
+  height: 4rem;
+}
+
 .w-3\/4{
   width: 75%;
 }
 
 .w-full{
   width: 100%;
+}
+
+.w-\[140px\]{
+  width: 140px;
+}
+
+.w-\[160px\]{
+  width: 160px;
+}
+
+.w-\[180px\]{
+  width: 180px;
+}
+
+.w-\[200px\]{
+  width: 200px;
+}
+
+.max-w-sm{
+  max-width: 24rem;
+}
+
+.max-w-\[140px\]{
+  max-width: 140px;
 }
 
 .-translate-x-3\/4{
