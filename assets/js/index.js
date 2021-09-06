@@ -15,9 +15,17 @@ window.addEventListener('scroll', function () {
     if (document.body.scrollTop >= 10 || document.documentElement.scrollTop >= 10) {
         navbarBorder.classList.add('border-b');
         mobileNavbar.classList.add('bg-white');
+        mobileMenuBtnOpen.classList.remove('text-white');
+        mobileMenuBtnClose.classList.remove('text-white');
+        logoWhite.classList.add('hidden');
+        logoBlack.classList.remove('hidden');
     } else {
         navbarBorder.classList.remove('border-b')
         mobileNavbar.classList.remove('bg-white');
+        mobileMenuBtnOpen.classList.add('text-white');
+        mobileMenuBtnClose.classList.add('text-white');
+        logoWhite.classList.remove('hidden');
+        logoBlack.classList.add('hidden');
     };
 });
 

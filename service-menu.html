@@ -19,7 +19,7 @@
         <nav class="container flex flex-col justify-between h-full pt-12 pb-4">
             <!-- Links -->
             <div class="flex flex-col space-y-4 text-sm font-semibold tracking-wider uppercase">
-                <a href="" class="py-2">Home</a>
+                <a href="index.html" class="py-2">Home</a>
                 <a href="" class="py-2">Service Menu</a>
                 <a href="" class="py-2">Our Story</a>
                 <a href="" class="py-2">Contact</a>
@@ -49,19 +49,16 @@
                 <!-- Navbar Logo -->
                 <div class="flex justify-center col-span-12 py-2">
                     <a href="" class="inline-block">
-                        <img class="w-[160px]" src="assets/images/zoes-beauty-logo-white.png" alt="navbar-logo"
+                        <img class="w-[160px]" src="assets/images/zoes-beauty-logo-black.png" alt="navbar-logo"
                             id="logoWhite">
-                        <img class="hidden w-[160px]" src="assets/images/zoes-beauty-logo-black.png" alt="navbar-logo"
-                            id="logoBlack">
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button class="absolute p-1 text-xl text-white right-5 top-4" type="button" id="mobileMenuBtnOpen">
+                <button class="absolute p-1 text-xl right-5 top-4" type="button" id="mobileMenuBtnOpen">
                     <i class="fal fa-bars"></i>
                 </button>
-                <button class="absolute hidden p-1 text-2xl text-white right-5 top-3" type="button"
-                    id="mobileMenuBtnClose">
+                <button class="absolute hidden p-1 text-2xl right-5 top-3" type="button" id="mobileMenuBtnClose">
                     <i class="fal fa-times"></i>
                 </button>
             </nav>
@@ -86,17 +83,17 @@
                 <div class="col-span-12 mb-12">
                     <img src="assets/images/waxing-01.png" alt="" class="bg-no-repeat bg-cover">
                 </div>
-                <div class="col-span-12 mb-12 font-light text-center">
+                <div class="col-span-12 font-light text-center">
                     <h1 class="mb-4 text-3xl font-garamond">Waxing</h1>
                     <p class="mb-12 text-lg">I’m well known for using strip wax with speed and thoroughness.
                         Just Wax Soft Honey Wax, which is a multipurpose wax of superior quality for all skin types and
                         areas of waxing.</p>
-                    <div class="grid grid-cols-12 px-4 space-y-4">
-                        <div class="flex justify-between col-span-12">
+                    <div class="grid grid-cols-12 px-4 gap-y-4 md:gap-x-6">
+                        <div class="flex justify-between col-span-12 md:col-span-6">
                             <p class="font-normal">Eyebrows</p>
                             <p>£9</p>
                         </div>
-                        <div class="flex justify-between col-span-12">
+                        <div class="flex justify-between col-span-12 md:col-span-6">
                             <p class="font-normal">Lip & Chin</p>
                             <p>£7</p>
                         </div>
@@ -175,10 +172,75 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Section 3 (Pedicure) -->
+        <!-- Section 3 (Pedicure) -->
+        <section class="py-16 section-three bg-blueGray-100">
+            <div class="container grid grid-cols-12">
                 <div class="col-span-12 mb-12">
                     <img src="assets/images/pedicure-01.png" alt="" class="bg-no-repeat bg-cover">
+                </div>
+                <div class="col-span-12 font-light text-center">
+                    <h1 class="mb-4 text-3xl font-garamond">Pedicures</h1>
+                    <p class="mb-12 text-lg">Treat your feet with my many options of pamper to suit your needs</p>
+                    <div class="grid grid-cols-12 px-4 text-left gap-y-4 md:gap-x-6">
+                        <div class="flex justify-between col-span-12">
+                            <p class="mr-4 font-normal">Mini Pedicure (Cuticles, Shape, Buff & Varnish)</p>
+                            <p>£16</p>
+                        </div>
+                        <div class="flex justify-between col-span-12">
+                            <p class="mr-4 font-normal">Spa Pedicure (Soak, Hard Skin Removal, Exfoliate, Massage,
+                                Cuticles,
+                                Shape, Buff & Varnish)</p>
+                            <p>£26</p>
+                        </div>
+                        <div class="flex justify-between col-span-12">
+                            <p class="font-normal">Spa Pedicure With Gels</p>
+                            <p>£30</p>
+                        </div>
+                        <div class="flex justify-between col-span-12">
+                            <p class="font-normal">Half Arm</p>
+                            <p>£11</p>
+                        </div>
+                        <div class="flex justify-between col-span-12">
+                            <p class="font-normal">Shape, Buff & Varnish</p>
+                            <p>£10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 (Manicures) -->
+        <section class="py-16 section-four">
+            <div class="container grid grid-cols-12">
+                <div class="col-span-12 mb-12">
+                    <img src="assets/images/manicure-01.png" alt="" class="bg-no-repeat bg-cover">
+                </div>
+                <div class="col-span-12 font-light text-center">
+                    <h1 class="mb-4 text-3xl font-garamond">Manicures</h1>
+                    <p class="mb-12 text-lg">Treat your hands with my many options of pamper to suit your needs</p>
+                    <div class="grid grid-cols-12 px-4 text-left gap-y-4 md:gap-x-6">
+                        <div class="flex justify-between col-span-12">
+                            <p class="mr-4 font-normal">Mini Manicure £16 (Cuticles, Shape, Buff & varnish) Gel manicure
+                                (overlay)</p>
+                            <p>£22</p>
+                        </div>
+                        <div class="flex justify-between col-span-12">
+                            <p class="mr-4 font-normal">Spa Manicure (Soak, Exfoliate, Massage, Cuticles, Shape, Buff &
+                                Varnish)</p>
+                            <p>£23</p>
+                        </div>
+                        <div class="flex justify-between col-span-12">
+                            <p class="font-normal">Spa Manicure with Gel</p>
+                            <p>£28</p>
+                        </div>
+                        <div class="flex justify-between col-span-12">
+                            <p class="font-normal">Shape, Buff & Varnish</p>
+                            <p>£10</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -195,7 +257,7 @@
                     </a>
                 </div>
                 <div class="flex flex-col col-span-6 space-y-2 text-sm font-semibold tracking-wider text-center">
-                    <a href="" class="py-1 duration-300 hover:text-trueGray-600">Home</a>
+                    <a href="index.html" class="py-1 duration-300 hover:text-trueGray-600">Home</a>
                     <a href="" class="py-1 duration-300 hover:text-trueGray-600">Service Menu</a>
                 </div>
                 <div class="flex flex-col col-span-6 space-y-2 text-sm font-semibold tracking-wider text-center">

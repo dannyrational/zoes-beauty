@@ -914,6 +914,14 @@ select{
   margin-bottom: 1rem;
 }
 
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.mr-4{
+  margin-right: 1rem;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -989,6 +997,19 @@ select{
 
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-y-4{
+  row-gap: 1rem;
+}
+
+.gap-x-6{
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
@@ -1277,7 +1298,16 @@ select{
     grid-column: span 3 / span 3;
   }
 
+  .md\:col-span-6{
+    grid-column: span 6 / span 6;
+  }
+
   .md\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .md\:gap-x-6{
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 }
